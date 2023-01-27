@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+
+chown root:root -R extras
+
+cd .mklive
+./mklive.sh -b "`cat ../base`" -C "`cat ../kernelargs`" -I ../extras -l "`cat ../locale`" -o "`cat ../output`" -p "`cat ../packages`" -S "`cat ../services`" -T "`cat ../title`" -v "`cat ../kernel`"
+
+isotoverify=$(cat ../output)
+md5sum $isotoverify > $isotoverify.md5
+mv *.iso ../
+mv *.md5 ../
+cd ..
+
+sync
+exit
+
