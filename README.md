@@ -12,4 +12,5 @@ If you run the script without changing anything you'll get a stock Void base wit
 <br>
 **Usage**<br>
 Edit each file with your preference then run sudo ./vxbuild<br>
+The first run will take a while as it downloads the base, subsequent runs will be much quicker as the packages are cached.
 <br>
