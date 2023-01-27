@@ -11,5 +11,5 @@ All firmware is excluded by default. Edit firmware-exclude and delete the ones y
 If you run the script without changing anything you'll get a stock Void base without any firmware (398MB)<br>
 <br>
 **Usage**<br>
-Edit each file with your preference and run sudo ./vxbuild<br>
+Edit each file with your preference then run sudo ./vxbuild<br>
 <br>
